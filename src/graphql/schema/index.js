@@ -57,9 +57,9 @@ const typeDefs = gql`
     deleteBook(bookId: ID!): RecordDeleteResponse!
     addAuthor(name: String!, phone: String!): Author!
     deleteAuthor(authorId: ID!): Author!
-    login(email: String): String # login token
     updateAuthor(authorId: ID!, name: String, phone: String): Author
     updateBook(bookId: ID!, genres: [String], name: String): Book
+    login(email: String): String # login token
   }
 
   type Subscription {
